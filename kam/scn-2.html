@@ -1,0 +1,57 @@
+<html>  
+<head><link rel="stylesheet" href="s.css">  
+  <link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.css">
+<link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.min.css">
+<title>Kam Oneshot</title>  
+          <meta property="og:type" content="website">  
+        <meta property="og:title" content="Kam Oneshot">  
+      <meta property="og:description" content="This game features a lot of scenarios and situations with 3 choices for you to choose. But once you're dead, you're banned from the page until the page updates.">  
+        <meta property="og:url" content="https://z.ne1.co/">  
+       <meta name="og:image" content="https://cdn.discordapp.com/attachments/1057098689199484958/1069982403705176104/NeuroYay.gif">  
+      <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/1057098689199484958/1069982403705176104/NeuroYay.gif">  
+        <meta name="theme-color" content="#2f3136">  
+</head>  
+  <body>  
+<div id=center><center>  
+  <img src="https://cdn.discordapp.com/emojis/1069989552669868074.gif?size=256"></img>  
+  <br>  
+  <!--Title-->  
+  <h1>Forgotten Password</h1>  
+  <!--Body-->  
+  <p>  
+   You are running away from a yandere who's chasing you. You go to your house and tried to open the door but it's locked. It needs a password but you forgotten the password a few hours ago. What do you do?  
+  </p>  
+  <br>  
+  <!--Answers-->  
+  <p id="answers">A. Blam your head into a wall <br> B. Run away more <br> C. Grab a stone and fight the yandere </p>  
+    
+  <br><lso id="nsm">  
+<button onclick="answer(1);" class="btn btn-dark btn-outline-light">A</button>  
+  <button onclick="answer(2);" class="btn btn-dark btn-outline-light">B</button>  
+  <button onclick="answer(3);" class="btn btn-dark btn-outline-light">C</button></lso>  
+  <br>  
+  <br>  
+</center>  
+  <script src="check.js"></script>  
+<script>  
+  function answer(num) {  
+    //A  
+    if (num == 1) {  
+      fate(1);  
+      document.getElementById("answers").innerHTML=`<b>A. Blam your head into a wall</b><br><br>You smash your head into the wall and suddenly remembered the password. You entered the password and the door unlocks. You quickly rush inside and locked the door as fast as you can. You finally calmed down and called the police.`;  
+    };  
+    //B  
+    if (num == 2) {  
+      fate(2);  
+      document.getElementById("answers").innerHTML=`<b>B. Run away more</b><br><br>Unable to remember the password, you ran away as fast as you can. You keep running until you collapse. The yandere finds you and stabs you from behind. You died.`;  
+    };  
+    //C  
+    if (num == 3) {  
+      fate(2);  
+      document.getElementById("answers").innerHTML=`<b>C. Grab a stone and fight the yandere</b><br><br>You picked up a stone pebble. The yandere came and you threw the rock as hard as you can. The yandere dodged. You tried to fight with your fist but you missed and the yandere swiftly stabs you from behind. You died.`;  
+    };  
+  };  
+    
+</script>  
+  </body>  
+</html>  

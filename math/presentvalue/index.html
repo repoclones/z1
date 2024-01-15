@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>z.ne1.co @ PVCalculator</title>
+<link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css">
+
+  
+    
+    <meta property="og:title" content="my reaction to that information">
+    <meta name="twitter:title" content="my reaction to that information">
+  
+
+  
+    <meta name="theme-color" content="#000000">
+  
+
+  
+    
+      <meta name="og:image" content="https://z.ne1.co/er.webp">
+      <meta name="twitter:image" content="https://z.ne1.co/er.webp">
+      <meta name="twitter:card" content="summary_large_image">
+<style>
+html, body {
+	height: 100%;
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #f5f5f5;
+}
+.form-signin {
+	width: 100%;
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+}
+.form-signin .checkbox {
+	font-weight: 400;
+}
+.form-signin .form-control {
+	position: relative;
+	box-sizing: border-box;
+	height: auto;
+	padding: 10px;
+	font-size: 16px;
+}
+.form-signin .form-control:focus {
+	z-index: 2;
+}
+.form-signin input[type=text] {
+	margin-bottom: -1px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.form-signin input[type=password] {
+	margin-bottom: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+#stage {
+	position: relative;
+}
+#stage img {
+	width: 100%;
+	margin-bottom: 20px;
+	border-radius: 20px;
+}
+#stage button {
+	position: absolute;
+	padding: 0;
+}
+#inner {
+	position: relative;
+	background-color: #999;
+	clip-path: circle(120px at center);
+}
+#cover {
+	position: absolute;
+	background-color: #000000;
+  background-image: url("door.jpg");
+	width: 100%;
+	height: 100%;
+	bottom: 10%;
+	transition: all 1s;
+	box-shadow: 0 0 0 5px rgba(0, 0, 0, .1);
+}
+#text {
+	position: absolute;
+	bottom: 30%;
+	font-size: 2em;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0.4;
+	font-weight: bold;
+}
+#detail {
+	position: absolute;
+	background: rgba(255, 255, 255, .1);
+	width: 100%;
+	height: 10px;
+	bottom: 0;
+}
+#handle {
+	position: absolute;
+	background: #ccc;
+	bottom: -2px;
+	box-shadow: 0 1px 0 1px rgba(0, 0, 0, .1);
+	height: 8px;
+	left: 50%;
+	margin-left: -15px;
+	width: 30px;
+	cursor: pointer;
+}
+#info {
+	left: 40px;
+	bottom: 20px;
+}
+#refresh {
+	right: 40px;
+	bottom: 20px;
+}
+#live2d {
+	cursor: grab;
+	height: 300px;
+	width: 300px;
+}
+#live2d:active {
+	cursor: grabbing;
+}
+</style>
+</head>
+<body class="text-center">
+<div class="form-signin">
+
+	<h1 class="h3 mb-3 fw-normal">Present Value Calculator (Interest)</h1>
+
+	<div class="d-grid">
+    
+    <form id="pvcalculator-form">
+      <p>Uses the formula P=A/1+rt.<br> Please fill to continue.</p>
+      <input type="number" name="fa" id="fv-field" class="login-form-field" placeholder="Future Value (A)" required>
+      <input type="number" name="fi" id="ir-field" class="login-form-field" placeholder="Interest Rate (i)" required>
+      <input type="number" name="ft" id="tm-field" class="login-form-field" placeholder="Time (t)" required>
+      <br>
+      <button class="btn btn-lg btn-primary" id="pvcalculator-form-submit">Calculate!</button>
+    </form>
+    
+    <a href="../../menu"><button class="btn btn-lg btn-primary">Go back</button></a>
+	</div>
+	<p class="mt-5 mb-3 text-muted">Make sure your browser has javascript enabled!</p>
+                 
+</div>
+  <script>
+ girlon = localStorage.getItem("girlon");
+    const loadex = "https://z.ne1.co/";
+      if (girlon === null) {
+        girlon = 0;
+      };
+    if (girlon == 1) {
+        function loadExternalResource(url, type) {
+	return new Promise((resolve, reject) => {
+		let tag;
+
+		if (type === "css") {
+			tag = document.createElement("link");
+			tag.rel = "stylesheet";
+			tag.href = url;
+		}
+		else if (type === "js") {
+			tag = document.createElement("script");
+			tag.src = url;
+		}
+		if (tag) {
+			tag.onload = () => resolve(url);
+			tag.onerror = () => reject(url);
+			document.head.appendChild(tag);
+		}
+	});
+}
+
+// 加载 waifu.css live2d.min.js waifu-tips.js
+
+	Promise.all([
+		loadExternalResource(loadex + "nams.js", "js")
+	]);
+
+      };
+
+    
+
+console.log(`
+  く__,.ヘヽ.        /  ,ー､ 〉
+           ＼ ', !-─‐-i  /  /´
+           ／｀ｰ'       L/／｀ヽ､
+         /   ／,   /|   ,   ,       ',
+       ｲ   / /-‐/  ｉ  L_ ﾊ ヽ!   i
+        ﾚ ﾍ 7ｲ｀ﾄ   ﾚ'ｧ-ﾄ､!ハ|   |
+          !,/7 '0'     ´0iソ|    |
+          |.从"    _     ,,,, / |./    |
+          ﾚ'| i＞.､,,__  _,.イ /   .i   |
+            ﾚ'| | / k_７_/ﾚ'ヽ,  ﾊ.  |
+              | |/i 〈|/   i  ,.ﾍ |  i  |
+             .|/ /  ｉ：    ﾍ!    ＼  |
+              kヽ>､ﾊ    _,.ﾍ､    /､!
+              !'〈//｀Ｔ´', ＼ ｀'7'ｰr'
+              ﾚ'ヽL__|___i,___,ンﾚ|ノ
+                  ﾄ-,/  |___./
+                  'ｰ'    !_,.:
+`);
+  </script>  
+   <script defer type="text/javascript">
+const loginForm = document.getElementById("pvcalculator-form");
+const loginButton = document.getElementById("pvcalculator-form-submit");
+
+	loginButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    const fa = loginForm.fa.value;
+    const fi = loginForm.fi.value;
+    const ft = loginForm.ft.value;
+
+    var rate = fi / 100;
+    console.log(rate);
+
+     var rxt = rate * ft;
+    console.log(rxt);
+
+    var rxtp = rxt + 1;
+    console.log(rxtp);
+
+    var fval = fa / rxtp;
+    console.log(fval);
+    console.log(Math.round(fval))
+
+    
+    //  document.getElementById("8ball").innerHTML="8ball: "+response[randomResponse];
+      
+    
+	
+
+	
+})</script>
+</body>
+</html>

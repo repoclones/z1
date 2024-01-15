@@ -1,0 +1,57 @@
+<html>  
+<head><link rel="stylesheet" href="s.css">  
+<head><link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.css">  
+<head><link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.min.css">  
+<title>Kam Oneshot</title>  
+          <meta property="og:type" content="website">  
+        <meta property="og:title" content="Kam Oneshot">  
+      <meta property="og:description" content="This game features a lot of scenarios and situations with 3 choices for you to choose. But once you're dead, you're banned from the page until the page updates.">  
+        <meta property="og:url" content="https://z.ne1.co/">  
+       <meta name="og:image" content="https://cdn.discordapp.com/attachments/1057098689199484958/1069982403705176104/NeuroYay.gif">  
+      <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/1057098689199484958/1069982403705176104/NeuroYay.gif">  
+        <meta name="theme-color" content="#2f3136">  
+</head>  
+  <body>  
+<div id=center><center>  
+  <img src="https://cdn.discordapp.com/emojis/1069989552669868074.gif?size=256"></img>  
+  <br>  
+  <!--Title-->  
+  <h1>Mysterious Coffee</h1>  
+  <!--Body-->  
+  <p>  
+   A robot girl named Neuro serves some coffee for you. You politely refused but she suddenly said, "Drink now or my swarm will hunt you down. hearthhearthearthheartheart". What do you do?  
+  </p>  
+  <br>  
+  <!--Answers-->  
+  <p id="answers">A. Drink her coffee <br> B. Call Vedal <br> C. Act like you're drinking the coffee </p>  
+    
+  <br><lso id="nsm">  
+<button onclick="answer(1);" class="btn btn-dark btn-outline-light">A</button>  
+  <button onclick="answer(2);" class="btn btn-dark btn-outline-light">B</button>  
+  <button onclick="answer(3);" class="btn btn-dark btn-outline-light">C</button></lso>  
+  <br>  
+  <br>  
+</center>  
+  <script src="check.js"></script>  
+<script>  
+  function answer(num) {  
+    //A  
+    if (num == 1) {  
+      fate(2);  
+      document.getElementById("answers").innerHTML=`<b>A. Drink her coffee</b><br><br>You drank her coffee and immediately start choking. You can't breathe and soon enough, you died.`;  
+    };  
+    //B  
+    if (num == 2) {  
+      fate(2);  
+      document.getElementById("answers").innerHTML=`<b>B. Call Vedal</b><br><br>You try to call Vedal on your phone but Neuro started slapping you so hard that the phone broke with it. As you try to stand up, an army of men pinned you down and forced to drink the coffee. You immediately started choking and die.`;  
+    };  
+    //C  
+    if (num == 3) {  
+      fate(1);  
+      document.getElementById("answers").innerHTML=`<b>C. Act like you're drinking the coffee</b><br><br>You grab her coffee and act like you were drinking the coffee. You gave Neuro a thumbs up and she's happy.`;  
+    };  
+  };  
+    
+</script>  
+  </body>  
+</html>  

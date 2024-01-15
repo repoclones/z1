@@ -1,0 +1,57 @@
+<html>  
+<head><link rel="stylesheet" href="s.css">  
+<head><link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.css">  
+<head><link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.min.css">  
+<title>Kam Oneshot</title>  
+          <meta property="og:type" content="website">  
+        <meta property="og:title" content="Kam Oneshot">  
+      <meta property="og:description" content="This game features a lot of scenarios and situations with 3 choices for you to choose. But once you're dead, you're banned from the page until the page updates.">  
+        <meta property="og:url" content="https://z.ne1.co/">  
+       <meta name="og:image" content="https://cdn.discordapp.com/attachments/1057098689199484958/1069982403705176104/NeuroYay.gif">  
+      <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/1057098689199484958/1069982403705176104/NeuroYay.gif">  
+        <meta name="theme-color" content="#2f3136">  
+</head>  
+  <body>  
+<div id=center><center>  
+  <img src="https://cdn.discordapp.com/emojis/1069989552669868074.gif?size=256"></img>  
+  <br>  
+  <!--Title-->  
+  <h1>Unexpected Demon Girl</h1>  
+  <!--Body-->  
+  <p>  
+   As you were walking down the street, a demon girl pops up from the floor with the intent to kill you. You are unarmed, she's unarmed. What do you do?  
+  </p>  
+  <br>  
+  <!--Answers-->  
+  <p id="answers">A. Use your rizz. <br> B. "I think you got the wrong person here." <br> C. Run and try to pick something useful </p>  
+    
+  <br><lso id="nsm">  
+<button onclick="answer(1);" class="btn btn-dark btn-outline-light">A</button>  
+  <button onclick="answer(2);" class="btn btn-dark btn-outline-light">B</button>  
+  <button onclick="answer(3);" class="btn btn-dark btn-outline-light">C</button></lso>  
+  <br>  
+  <br>  
+</center>  
+  <script src="check.js"></script>  
+<script>  
+  function answer(num) {  
+    //A  
+    if (num == 1) {  
+      fate(2);  
+      document.getElementById("answers").innerHTML=`<b>A. Use your rizz.</b><br><br>You used Rizz. It was not very effective. <br> Demon Girl used Slash. It was super effective! <br> You died.`;  
+    };  
+    //B  
+    if (num == 2) {  
+      fate(1);  
+      document.getElementById("answers").innerHTML=`<b>B. "I think you got the wrong person here."</b><br><br>The demon girl takes a close look at you. "You're right. Hehe, silly me! :P", she said and leaves.`;  
+    };  
+    //C  
+    if (num == 3) {  
+      fate(2);  
+      document.getElementById("answers").innerHTML=`<b>C. Run and try to pick something useful</b><br><br>You run away. The demon girl follows you. As you run away, you picked up something from the ground. It was holy water! You splash the holy water to the demon girl but she's unaffected by it. Turns out the holy water you picked up from the ground was normal water. She grabs your neck and suffocates you. You died.`;  
+    };  
+  };  
+    
+</script>  
+  </body>  
+</html>  

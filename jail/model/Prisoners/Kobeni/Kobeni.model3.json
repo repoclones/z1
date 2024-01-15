@@ -1,0 +1,18 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "Kobeni.moc3",
+		"Textures": [
+			"Kobeni.2048/texture_00.png"
+		],
+		"Physics": "Kobeni.physics3.json",
+		"DisplayInfo": "Kobeni.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	]
+}

@@ -1,0 +1,57 @@
+<html>  
+<head><link rel="stylesheet" href="s.css">  
+<head><link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.css">  
+<head><link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.min.css">  
+<title>Kam Oneshot</title>  
+          <meta property="og:type" content="website">  
+        <meta property="og:title" content="Kam Oneshot">  
+      <meta property="og:description" content="This game features a lot of scenarios and situations with 3 choices for you to choose. But once you're dead, you're banned from the page until the page updates.">  
+        <meta property="og:url" content="https://z.ne1.co/">  
+       <meta name="og:image" content="https://cdn.discordapp.com/attachments/1057098689199484958/1069982403705176104/NeuroYay.gif">  
+      <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/1057098689199484958/1069982403705176104/NeuroYay.gif">  
+        <meta name="theme-color" content="#2f3136">  
+</head>  
+  <body>  
+<div id=center><center>  
+  <img src="https://cdn.discordapp.com/emojis/1069989552669868074.gif?size=256"></img>  
+  <br>  
+  <!--Title-->  
+  <h1>Inner Thoughts</h1>  
+  <!--Body-->  
+  <p>  
+   You walk on the street and saw a couple nearby. The couple was having fun. Normally, you would leave them alone but your inner thoughts say, "MURDER THEM". You stopped walking. What do you do?  
+  </p>  
+  <br>  
+  <!--Answers-->  
+  <p id="answers">A. Politely ask the couple for violence <br> B. Beat the couple up <br> C. Fight your inner thoughts and leave </p>  
+    
+  <br><lso id="nsm">  
+<button onclick="answer(1);" class="btn btn-dark btn-outline-light">A</button>  
+  <button onclick="answer(2);" class="btn btn-dark btn-outline-light">B</button>  
+  <button onclick="answer(3);" class="btn btn-dark btn-outline-light">C</button></lso>  
+  <br>  
+  <br>  
+</center>  
+  <script src="check.js"></script>  
+<script>  
+  function answer(num) {  
+    //A  
+    if (num == 1) {  
+      fate(1);  
+      document.getElementById("answers").innerHTML=`<b>A. Politely ask the couple for violence</b><br><br>You go to the couple and say, "Can I smash your table?". The couple were confused but you smashed the table anyway and ran. The couple were shouting at you but your inner thoughts died.`;  
+    };  
+    //B  
+    if (num == 2) {  
+      fate(2);  
+      document.getElementById("answers").innerHTML=`<b>B. Beat the couple up</b><br><br>You ran to the couple and mercilessly beat up the couple. After doing so, your bloodlust start to emerge and start a killing spree. After a few hours, the cops came and shot you. You died.`;  
+    };  
+    //C  
+    if (num == 3) {  
+      fate(2);  
+      document.getElementById("answers").innerHTML=`<b>C. Fight your inner thoughts and leave</b><br><br>You walked away from the couple fighting your inner thoughts. But the thoughts are getting stronger and you start hearing voices in your head. You ran into the nearest wall and smashed your head. The wall broke your skull and you die.`;  
+    };  
+  };  
+    
+</script>  
+  </body>  
+</html>  

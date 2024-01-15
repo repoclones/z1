@@ -1,0 +1,65 @@
+
+<html>
+<head><link rel="stylesheet" href="s.css">
+  <link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.css">
+<link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.min.css">
+<title>Kam Oneshot</title>
+          <meta property="og:type" content="website">
+        <meta property="og:title" content="Kam Oneshot">
+      <meta property="og:description" content="This game features a lot of scenarios and situations with 3 choices for you to choose. But once you're dead, you're banned from the page until the page updates.">
+        <meta property="og:url" content="https://z.ne1.co/">
+       <meta name="og:image" content="https://cdn.discordapp.com/attachments/1057098689199484958/1069982403705176104/NeuroYay.gif">
+      <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/1057098689199484958/1069982403705176104/NeuroYay.gif">
+        <meta name="theme-color" content="#2f3136">
+</head>
+  <body>
+<div id=center><center>
+  <img src="https://cdn.discordapp.com/emojis/1069989552669868074.gif?size=256"></img>
+  <br>
+  <h1>Kam Oneshot</h1>
+  <p>
+    This game features a lot of scenarios and situations with 3 choices for you to choose.
+    <br>
+    But once you're dead, you're banned from the page until the page updates.
+  </p>
+  <br>
+  <p id="status">Checking your cookies...</p>
+  <br>
+ <gig id="btn-start"> <button class="btn btn-primary" disabled> Play </button></gig>
+  <br>
+  <br>
+
+</center>
+  <script>
+ kamstatusn = localStorage.getItem("kamstatusn");
+     kamscore = localStorage.getItem("kamscore");
+      if (kamstatusn === null) {
+        kamstatusn = 0;
+        localStorage.setItem('kamstatusn', 0);
+      };
+    if (kamscore === null) {
+      kamscore = 0;
+      localStorage.setItem('kamscore', 0);
+      };
+    if (kamstatusn == 1) {
+      document.getElementById("status").innerHTML=`You are currently banned from playing this game.<br>Your score is <gig id="score">0</gig>.`;
+      document.getElementById("score").innerHTML=kamscore;
+      };
+    if (kamstatusn == 0) {
+      document.getElementById("status").innerHTML=`You are unbanned. You can now play the game.`;
+      document.getElementById("btn-start").innerHTML=`<button onclick="start();" class="btn btn-primary"> Play </button>`;
+      
+    };
+
+
+    function start(){
+      localStorage.setItem('kamscore', 0);
+      scn = Math.floor(Math.random() * 8) + 1;
+       url = "./scn-" + scn + ".html";
+       window.location.assign(url);
+    };
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,59 @@
+
+<html>
+<head><link rel="stylesheet" href="s.css">
+<link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.css">
+<link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.min.css">
+<title>Kam Oneshot</title>
+          <meta property="og:type" content="website">
+        <meta property="og:title" content="Kam Oneshot">
+      <meta property="og:description" content="This game features a lot of scenarios and situations with 3 choices for you to choose. But once you're dead, you're banned from the page until the page updates.">
+        <meta property="og:url" content="https://z.ne1.co/">
+       <meta name="og:image" content="https://cdn.discordapp.com/attachments/1057098689199484958/1069982403705176104/NeuroYay.gif">
+      <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/1057098689199484958/1069982403705176104/NeuroYay.gif">
+        <meta name="theme-color" content="#2f3136">
+</head>
+  <body>
+<div id=center><center>
+  <img src="https://cdn.discordapp.com/emojis/1069989552669868074.gif?size=256"></img>
+  <br>
+  <!--Title-->
+  <h1>Rogue AI</h1>
+  <!--Body-->
+  <p>
+   An AI has gone rogue and trapped you into a room. You see a laptop, a vent, and a stone pickaxe. What do you do?
+  </p>
+  <br>
+  <!--Answers-->
+  <p id="answers">A. Try to hack the AI using the Laptop <br> B. Crawl through the vent <br> C. Mine your way out</p>
+  
+  <br><lso id="nsm">
+<button onclick="answer(1);" class="btn btn-dark btn-outline-light">A</button>
+  <button onclick="answer(2);" class="btn btn-dark btn-outline-light">B</button>
+  <button onclick="answer(3);" class="btn btn-dark btn-outline-light">C</button></lso>
+  <br>
+  <br>
+
+</center>
+  <script src="check.js"></script>
+<script>
+  function answer(num) {
+    //A
+    if (num == 1) {
+      fate(2);
+      document.getElementById("answers").innerHTML=`<b>A. Try to hack the AI using the Laptop</b><br><br>You opened the laptop and start opening stuff but you don't actually know what you are doing. The AI destroys the ceiling, crushing you in the process. You died.`;
+    };
+    //B
+    if (num == 2) {
+      fate(1);
+      document.getElementById("answers").innerHTML=`<b>B. Crawl through the vent</b><br><br>You open the vent and start crawling fast. You crawled and crawled until you reach the exit and ran away.`;
+    };
+    //C
+    if (num == 3) {
+      fate(2);
+      document.getElementById("answers").innerHTML=`<b>C. Mine your way out</b><br><br>You pick up the stone pickaxe and mine the wall next to you. But after 5 blocks mined, you hear a beep and something exploded in front of you. You died afterwards.`;
+    };
+  };
+  
+</script>
+  </body>
+</html>

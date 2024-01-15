@@ -1,0 +1,85 @@
+{
+	"mouseover": [{
+		"selector": "#live2d",
+		"text": ["What are you doing, take your hands away~~", "Mouse...the mouse is in the wrong place!", "What are you doing?", "Meow meow?", "I'm afraid (ノ≧∇≦) ノ", "Indecent! Help!", "In this case, you can only use force!", "I'm going to be angry", "Don't touch me!", "It's really shameless!", "Hentai", "stop..."]
+	}, {
+		"selector": "#waifu-tool-quit",
+		"text": ["Is it time to say goodbye?", "Are your parents home by any chance?", "Don't abandon me...", "Can we meet again?", "Hmph, you will regret it! ", "Click that button and I'll sink... :("]
+	},
+    {
+		"selector": "#pvcalculator",
+		"text": "<span>PVCalculator</span> - This requires Future Value (A), Interest Rate (r), and Time (t) to calculate the value."
+	},{
+		"selector": "#girlseel",
+		"text": "Are you... tired of me?"
+	}
+  ],
+	"seasons": [{
+		"date": "01/01",
+		"text": "<span>Happy new year!</span> The year is now {year}."
+	}, {
+		"date": "02/14",
+		"text": "Wow, it's <span>Valentine's day!</span> Are you still single in {year}?"
+	}, {
+		"date": "03/08",
+		"text": "Today is <span>International Women's Day</span>! Appreciate me! (Just kidding~)"
+	}, {
+		"date": "03/12",
+		"text": "Today is <span>Arbor Day</span>, protect the environment!"
+	}, {
+		"date": "04/01",
+		"text": "Hey, I have a secret to tell you! <span>Today is April Fool's Day, don't be fooled~</span>"
+	}, {
+		"date": "05/01",
+		"text": "Today is <span>May 1 Labor Day</span>, is it a holiday for you?"
+	}, {
+		"date": "06/01",
+		"text": "It's <span>Children's Day</span>, happy time is always short, it would be nice if I never grow up..."
+	}, {
+		"date": "09/03",
+		"text": "<span>The Victory Day of the Chinese People's War of Resistance Against Japanese Aggression</span>, to remember history, remember the martyrs, cherish peace and create the future. Unless you're not in China..."
+	}, {
+		"date": "09/10",
+		"text": "<span>Teacher's Day</span>, you should say hello to the teacher at school~"
+	}, {
+		"date": "10/01",
+		"text": "<span>National Day</span> is here, celebrate the birthday of the motherland! (I live in China)"
+	}, {
+		"date": "11/05-11/12",
+		"text": "Who did you spend <span>Double Eleven</span> with this year~"
+	}, {
+		"date": "12/20-12/31",
+		"text": ["It's <span>Christmas</span> these days, the owner must be shopping again~","Hallo! It's the <span>Christmas</span> season! Aren't you supposed to be here?"]
+	}],
+	"time": [{
+		"hour": "6-7",
+		"text": ["Good morning! The plan for a day is in the morning, a beautiful day is about to begin~","Good morning! What are you doing here so early?"]
+	}, {
+		"hour": "8-11",
+		"text": "Hello there! I hope you're focused on work!"
+	}, {
+		"hour": "12-13",
+		"text": "It's noon, I've worked all morning, now it's lunch time!"
+	}, {
+		"hour": "14-17",
+		"text": "It's easy to get sleepy in the afternoon, have you completed your exercise goal today?"
+	}, {
+		"hour": "18-19",
+		"text": "It's evening! The sunset scenery outside the window is very beautiful, the most beautiful is the red sunset~"
+	}, {
+		"hour": "20-21",
+		"text": "Good evening, how are you doing today?"
+	}, {
+		"hour": "22-23",
+		"text": ["It's already so late, go to bed early, good night~", "Take care of your eyes in the middle of the night!"]
+	}, {
+		"hour": "0-5",
+		"text": ["Are you a night owl? Why don't you go to bed so late, will you wake up tomorrow?","S L E E P."]
+	}],
+	"message": {
+		"default": ["Long time no see, the days go by so fast...", "Big villain! How long have you been ignoring others, blah blah~", "Hi~ come and tease me!", "Take a small fist and hammer Your chest!", "I hope you're not too dirty-minded with Mimi..."],
+		"console": ["Haha, you opened the console, do you want to see my little secret?","Close DevTools/Console please! :D"],
+		"copy": "Whatever you copied, remember to add the source when reprinting!",
+		"visibilitychange": ["Wow, you are finally back~","Welcome back!"]
+	}
+}

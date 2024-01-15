@@ -1,0 +1,43 @@
+
+<html>
+<head><link rel="stylesheet" href="s.css">
+
+<title>Kam Oneshot</title>
+          <meta property="og:type" content="website">
+        <meta property="og:title" content="Kam Oneshot">
+      <meta property="og:description" content="This game features a lot of scenarios and situations with 3 choices for you to choose. But once you're dead, you're banned from the page until the page updates.">
+        <meta property="og:url" content="https://z.ne1.co/">
+       <meta name="og:image" content="https://cdn.discordapp.com/attachments/1057098689199484958/1069982403705176104/NeuroYay.gif">
+      <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/1057098689199484958/1069982403705176104/NeuroYay.gif">
+        <meta name="theme-color" content="#2f3136">
+</head>
+  <body>
+<div id=center><center>
+  <img src="https://cdn.discordapp.com/emojis/1069989552669868074.gif?size=256"></img>
+  <br>
+  <h1>Oops!</h1>
+  <p>
+    <p id="reasons">Either you're not allowed to go here or an unexpected error occured.</p>
+    <br>
+    
+    <a href="./index.html">Click here to go back to main page.</a>
+  </p>
+
+  <br>
+  <br>
+
+</center>
+<script>
+ kamerrorn = localStorage.getItem("kamerrorn");
+    
+    if (kamerrorn == 1) {
+      document.getElementById("reasons").innerHTML=`You are currently banned.`;
+    };
+  if (kamerrorn == 2) {
+      document.getElementById("reasons").innerHTML=`You are not playing the game yet!`;
+    };
+
+    </script>
+
+  </body>
+</html>

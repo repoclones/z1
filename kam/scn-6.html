@@ -1,0 +1,57 @@
+<html>  
+<head><link rel="stylesheet" href="s.css">  
+<head><link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.css">  
+<head><link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.min.css">  
+<title>Kam Oneshot</title>  
+          <meta property="og:type" content="website">  
+        <meta property="og:title" content="Kam Oneshot">  
+      <meta property="og:description" content="This game features a lot of scenarios and situations with 3 choices for you to choose. But once you're dead, you're banned from the page until the page updates.">  
+        <meta property="og:url" content="https://z.ne1.co/">  
+       <meta name="og:image" content="https://cdn.discordapp.com/attachments/1057098689199484958/1069982403705176104/NeuroYay.gif">  
+      <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/1057098689199484958/1069982403705176104/NeuroYay.gif">  
+        <meta name="theme-color" content="#2f3136">  
+</head>  
+  <body>  
+<div id=center><center>  
+  <img src="https://cdn.discordapp.com/emojis/1069989552669868074.gif?size=256"></img>  
+  <br>  
+  <!--Title-->  
+  <h1>Life-threatening Massage</h1>  
+  <!--Body-->  
+  <p>  
+   You go into the massage room and lied down on the bed waiting for the massager. A few hours later, the massager showed up but with angry eyes and soulless expression. You try to stand up but the massager pins you down and starts massaging you. You feel a lot of pain in your back to the point where your bones almost break. It's clear that he's in rage. What do you do?  
+  </p>  
+  <br>  
+  <!--Answers-->  
+  <p id="answers">A. "H-Hey, that's too hard..." <br> B. Scream at the top of your lungs <br> C. Endure the massage </p>  
+    
+  <br><lso id="nsm">  
+<button onclick="answer(1);" class="btn btn-dark btn-outline-light">A</button>  
+  <button onclick="answer(2);" class="btn btn-dark btn-outline-light">B</button>  
+  <button onclick="answer(3);" class="btn btn-dark btn-outline-light">C</button></lso>  
+  <br>  
+  <br>  
+</center>  
+  <script src="check.js"></script>  
+<script>  
+  function answer(num) {  
+    //A  
+    if (num == 1) {  
+      fate(2);  
+      document.getElementById("answers").innerHTML=`<b>A. "H-Hey, that's too hard..."</b><br><br>The massager misheard you and goes harder. You feel a lot of pain and feel one of your bones break. A few hours later, the massager leaves but you die due to blood loss.`;  
+    };  
+    //B  
+    if (num == 2) {  
+      fate(1);  
+      document.getElementById("answers").innerHTML=`<b>B. Scream at the top of your lungs</b><br><br>"AAAAAAAAAAAAAAAHHHHH!", you screamed. The massager finally came back to his senses and apologises. The rest of the massage ends peacefully.`;  
+    };  
+    //C  
+    if (num == 3) {  
+      fate(2);  
+      document.getElementById("answers").innerHTML=`<b>C. Endure the massage</b><br><br>You try to endure the massage. A few hours later, you die due to blood loss. (Vomiting blood while massage)`;  
+    };  
+  };  
+    
+</script>  
+  </body>  
+</html>  
