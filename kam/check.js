@@ -22,7 +22,7 @@ function insync(){
 if (st == 1) {
   if (tuimer == 0) {
      if (nd == 0) {
-       scn = Math.floor(Math.random() * 8) + 1;
+       scn = Math.floor(Math.random() * 9) + 1;
        url = "./scn-" + scn + ".html";
        window.location.assign(url);
         nd = 69;

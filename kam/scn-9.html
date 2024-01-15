@@ -1,0 +1,57 @@
+<html>  
+<head><link rel="stylesheet" href="s.css">  
+<head><link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.css">  
+<head><link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.min.css">  
+<title>Kam Oneshot</title>  
+          <meta property="og:type" content="website">  
+        <meta property="og:title" content="Kam Oneshot">  
+      <meta property="og:description" content="This game features a lot of scenarios and situations with 3 choices for you to choose. But once you're dead, you're banned from the page until the page updates.">  
+        <meta property="og:url" content="https://z.ne1.co/">  
+       <meta name="og:image" content="https://cdn.discordapp.com/attachments/1057098689199484958/1069982403705176104/NeuroYay.gif">  
+      <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/1057098689199484958/1069982403705176104/NeuroYay.gif">  
+        <meta name="theme-color" content="#2f3136">  
+</head>  
+  <body>  
+<div id=center><center>  
+  <img src="https://cdn.discordapp.com/emojis/1069989552669868074.gif?size=256"></img>  
+  <br>  
+  <!--Title-->  
+  <h1>Coffee Candy</h1>  
+  <!--Body-->  
+  <p>  
+   You ate a random candy and went to sleep. The problem is... you are still awake. You come to the realization that the candy tasted like coffee. What do you do?
+  </p>  
+  <br>  
+  <!--Answers-->  
+  <p id="answers">A. Stay up all night <br> B. Drink water <br> C. Find a comfortable spot </p>  
+    
+  <br><lso id="nsm">  
+<button onclick="answer(1);" class="btn btn-dark btn-outline-light">A</button>  
+  <button onclick="answer(2);" class="btn btn-dark btn-outline-light">B</button>  
+  <button onclick="answer(3);" class="btn btn-dark btn-outline-light">C</button></lso>  
+  <br>  
+  <br>  
+</center>  
+  <script src="check.js"></script>  
+<script>  
+  function answer(num) {  
+    //A  
+    if (num == 1) {  
+      fate(2);  
+      document.getElementById("answers").innerHTML=`<b>A. Stay up all night</b><br><br>You stayed up all night.<br>Congratulations! You are now sleep-deprived. Big mistake.`;  
+    };  
+    //B  
+    if (num == 2) {  
+      fate(2);  
+      document.getElementById("answers").innerHTML=`<b>B. Drink water</b><br><br>You drink some water. Sure, it had effect but not that much.`;  
+    };  
+    //C  
+    if (num == 3) {  
+      fate(1);  
+      document.getElementById("answers").innerHTML=`<b>C. Find a comfortable spot</b><br><br>You waste all of your energy trying to find a comfy spot to sleep in your bed. It worked.`;  
+    };  
+  };  
+    
+</script>  
+  </body>  
+</html>  
